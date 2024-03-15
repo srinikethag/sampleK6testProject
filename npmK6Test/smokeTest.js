@@ -8,6 +8,9 @@ export const options = {
     duration: __ENV.DURATION_TASKS_PAGE_TEST
 }
 
+console.log(__ENV.SECRET_VALUE);
+console.log(__ENV.NEW_VALUE);
+
 export default function() {
     http.get("https://test.k6.io");
     sleep(1);
