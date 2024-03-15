@@ -2,8 +2,8 @@ import { sleep } from 'k6';
 import http from 'k6/http';
 
 export const options = {
-    vus: 1,
-    duration: '30s'
+    vus: __ENV.VUS_PATEINTS_PAGE_TEST,
+    duration: __ENV.DURATION_TASKS_PAGE_TEST
 }
 
 export default function() {
