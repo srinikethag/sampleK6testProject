@@ -1,7 +1,5 @@
-import dotenv from 'dotenv';
-import { readFileSync, writeFileSync } from 'fs';
-dotenv.config();
+import { writeFileSync } from 'fs';
 
 process.env.NEW_VALUE=10
 
-fs.writeFileSync('.env', `NEW_VALUE=${process.env.NEW_VALUE}`);
+writeFileSync('.env', `NEW_VALUE=${process.env.NEW_VALUE}`);
