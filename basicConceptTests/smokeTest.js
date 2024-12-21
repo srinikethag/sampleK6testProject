@@ -3,8 +3,8 @@ import http from 'k6/http';
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 
 export const options = {
-    vus: __ENV.VUS_PATEINTS_PAGE_TEST,
-    duration: __ENV.DURATION_TASKS_PAGE_TEST
+    vus: __ENV.VUS_TEST,
+    duration: __ENV.DURATION_TEST
 }
 
 export default function() {
